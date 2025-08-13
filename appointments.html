@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Appointments - Nakasero Wellness Clinic</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <script defer src="js/scripts.js"></script>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav id="navbar" class="navbar">
+    <div class="container">
+
+      <!-- Hamburger Menu Icon -->
+      <div class="hamburger" id="hamburger">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+
+      <!-- Navigation Links -->
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        
+        <li><a href="services.html" class="nav-link">Services</a></li>
+        <li><a href="appointments.html" class="nav-link active">Appointments</a></li>
+        <li><a href="contact.html" class="nav-link">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Appointment Section -->
+  <section class="container appointment-section">
+    <h1>Book an Appointment</h1>
+    <form id="appointment-form" class="appointment-form">
+      <label for="name">Full Name:</label>
+      <input type="text" id="name" name="name" required placeholder="Your full name" />
+
+      <label for="email">Email Address:</label>
+      <input type="email" id="email" name="email" required placeholder="your.email@example.com" />
+
+      <label for="phone">Phone Number:</label>
+      <input type="tel" id="phone" name="phone" required placeholder="+256 700 000000" />
+
+      <label for="service">Select Service:</label>
+      <select id="service" name="service" required>
+        <option value="">-- Please choose --</option>
+        <option value="general-checkup">General Checkup</option>
+        <option value="lab-testing">Laboratory Testing</option>
+        <option value="immunization">Immunization</option>
+        <option value="maternal-care">Maternal Care</option>
+        <option value="chronic-management">Chronic Disease Management</option>
+      </select>
+
+      <label for="date">Preferred Date:</label>
+      <input type="date" id="date" name="date" required />
+
+      <button type="submit" class="btn btn-primary btn-animated">Submit</button>
+    </form>
+    <p id="form-message" class="form-message"></p>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>© 2025 Nakasero Wellness Clinic. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>
